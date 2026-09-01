@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Immich Folders for TV</string>
+
+    <!-- Navegación Lateral -->
+    <string name="nav_folders">Carpetas</string>
+    <string name="nav_albums">Álbumes</string>
+    <string name="nav_random">Aleatorio</string>
+    <string name="nav_memories">Recuerdos</string>
+    <string name="nav_settings">Ajustes</string>
+
+    <!-- Login y Conexión -->
+    <string name="login_title">Conectar con Immich</string>
+    <string name="login_header_title">Conectar a tu Servidor Immich</string>
+    <string name="login_header_subtitle">Escanea el código QR desde tu móvil o introduce los datos manualmente con el mando</string>
+    <string name="login_opt1_title">Opción 1: Escanear con el Móvil</string>
+    <string name="login_opt1_desc">Abre la cámara de tu móvil en el mismo WiFi para pegar la URL y API Key en 5 segundos.</string>
+    <string name="login_qr_waiting">Esperando conexión desde tu móvil...</string>
+    <string name="login_qr_validating">Validando credenciales recibidas...</string>
+    <string name="login_qr_success">¡Conexión establecida con éxito!</string>
+    <string name="login_opt2_title">Opción 2: Configurar con el Mando</string>
+    <string name="login_server_url">URL del Servidor Immich</string>
+    <string name="login_server_hint">http://192.168.1.81:2283</string>
+    <string name="login_api_key">API Key de Immich</string>
+    <string name="login_api_key_hint">Pega tu API Key de Immich</string>
+    <string name="login_btn_test_connect">Probar y Conectar</string>
+    <string name="login_btn_testing">Verificando...</string>
+    <string name="login_validation_empty">Debes rellenar la URL y la API Key</string>
+    <string name="login_connect">Conectar</string>
+    <string name="login_connecting">Conectando...</string>
+    <string name="login_qr_title">Configuración rápida con QR</string>
+    <string name="login_qr_desc">Escanea el código QR con tu móvil para configurar la conexión fácilmente</string>
+    <string name="login_error_empty">Por favor, introduce la URL del servidor y la API Key</string>
+    <string name="login_error_connection">No se pudo conectar con el servidor Immich</string>
+    <string name="login_success">Conexión establecida correctamente</string>
+
+    <!-- Carpetas y Álbumes -->
+    <string name="folders_title">Carpetas</string>
+    <string name="folders_subtitle">Explora tus fotos y vídeos por estructura de carpetas</string>
+    <string name="albums_title">Álbumes</string>
+    <string name="albums_subtitle">Tus álbumes organizados de Immich</string>
+    <string name="empty_folders">No se encontraron carpetas</string>
+    <string name="empty_albums">No se encontraron álbumes</string>
+    <string name="empty_media">No hay fotos ni vídeos en esta carpeta</string>
+    <string name="loading_content">Cargando contenido...</string>
+    <string name="error_loading">Error al cargar el contenido</string>
+    <string name="retry">Reintentar</string>
+    <string name="btn_reload">Recargar</string>
+    <string name="items_count">%1$d elementos</string>
+    <string name="items_count_detail">%1$d fotos y vídeos</string>
+
+    <!-- Botones de Acción en Cuadrícula -->
+    <string name="action_slideshow">Diapositivas</string>
+    <string name="action_columns">Columnas</string>
+    <string name="action_calendar">Ir a fecha</string>
+
+    <!-- Diálogo de Diapositivas -->
+    <string name="slideshow_dialog_title">Iniciar Diapositivas</string>
+    <string name="slideshow_type_label">Contenido a reproducir</string>
+    <string name="slideshow_type_all">Fotos y Vídeos</string>
+    <string name="slideshow_type_photos">Solo Fotos</string>
+    <string name="slideshow_type_videos">Solo Vídeos</string>
+    <string name="slideshow_start_label">Comenzar desde</string>
+    <string name="slideshow_start_first">Desde el principio</string>
+    <string name="slideshow_start_current">Desde el seleccionado</string>
+    <string name="slideshow_interval_label">Tiempo por diapositiva</string>
+    <string name="slideshow_interval_seconds">%1$d s</string>
+    <string name="slideshow_start_btn">Comenzar Diapositivas</string>
+
+    <!-- Diálogo de Columnas -->
+    <string name="columns_dialog_title">Columnas de Cuadrícula</string>
+    <string name="columns_dialog_subtitle">Número de columnas en las vistas de cuadrícula</string>
+    <string name="columns_count">%1$d Columnas</string>
+
+    <!-- Diálogo de Calendario / Ir a Fecha -->
+    <string name="calendar_dialog_title">Saltar a una Fecha</string>
+    <string name="calendar_dialog_subtitle">Selecciona año, mes o día para navegar rápidamente</string>
+    <string name="calendar_year">Año</string>
+    <string name="calendar_month">Mes</string>
+    <string name="calendar_day">Día</string>
+    <string name="calendar_jump_btn">Saltar a fecha</string>
+    <string name="calendar_no_dates">No hay fechas disponibles</string>
+
+    <!-- Visor de Fotos y Diapositivas Toasts -->
+    <string name="viewer_zoom">Zoom</string>
+    <string name="viewer_slideshow">Diapositivas</string>
+    <string name="viewer_exif">Información</string>
+    <string name="viewer_slideshow_paused">Pase pausado</string>
+    <string name="viewer_slideshow_resumed">Pase reanudado</string>
+    <string name="viewer_zoom_in">Zoom activado</string>
+    <string name="viewer_zoom_out">Zoom desactivado</string>
+    <string name="viewer_top_menu_title">Opciones de reproducción</string>
+    <string name="toast_slideshow_paused">Pase pausado</string>
+    <string name="toast_slideshow_started_photos">Iniciando pase (%1$ds) (Solo Fotos)</string>
+    <string name="toast_slideshow_started_all">Iniciando pase (%1$ds) (Fotos y Vídeos)</string>
+    <string name="toast_slideshow_ended">Fin del pase de diapositivas</string>
+    <string name="toast_slideshow_no_more">No hay más elementos para el pase</string>
+    <string name="toast_first_item">Primer elemento</string>
+    <string name="toast_last_item">Último elemento</string>
+    <string name="loading_folder">Cargando %1$s...</string>
+    <string name="slideshow_menu_title">Pases de diapositivas</string>
+
+    <!-- Ficha EXIF y Metadatos -->
+    <string name="exif_title">Información del Elemento</string>
+    <string name="exif_camera">Cámara</string>
+    <string name="exif_lens">Lente</string>
+    <string name="exif_params">Parámetros</string>
+    <string name="exif_iso">ISO</string>
+    <string name="exif_aperture">Apertura</string>
+    <string name="exif_exposure">Exposición</string>
+    <string name="exif_focal_length">Focal</string>
+    <string name="exif_resolution">Resolución</string>
+    <string name="exif_dimensions">Dimensiones</string>
+    <string name="exif_date">Fecha y Hora</string>
+    <string name="exif_location">Ubicación</string>
+    <string name="exif_filename">Archivo</string>
+    <string name="exif_filesize">Tamaño</string>
+
+    <!-- Reproductor de Vídeo -->
+    <string name="player_speed">Velocidad</string>
+    <string name="player_speed_toast">Velocidad: %1$sx</string>
+    <string name="player_play">Reproducir</string>
+    <string name="player_pause">Pausar</string>
+    <string name="player_forward_10">+10s</string>
+    <string name="player_replay_10">-10s</string>
+    <string name="player_loop_on">Bucle activado</string>
+    <string name="player_loop_off">Bucle desactivado</string>
+    <string name="player_ended_title">Vídeo finalizado</string>
+    <string name="player_video_ended">Vídeo finalizado</string>
+    <string name="player_replay">Repetir</string>
+    <string name="player_next">Siguiente</string>
+    <string name="player_prev">Anterior</string>
+    <string name="player_video_specs">Ficha técnica</string>
+
+    <!-- Login -->
+    <string name="login_subtitle">Introduce los datos de tu servidor Immich o usa el código QR</string>
+
+    <!-- Aleatorio y Recuerdos -->
+    <string name="random_title">Descubrimiento Aleatorio</string>
+    <string name="random_subtitle">Revive fotos y vídeos aleatorios de toda tu biblioteca</string>
+    <string name="random_refresh">Mezclar</string>
+    <string name="memories_title">Recuerdos</string>
+    <string name="memories_subtitle">Fotos y vídeos tomados en este día en años anteriores</string>
+    <string name="memories_years_ago">Hace %1$d años</string>
+    <string name="memories_year_ago">Hace 1 año</string>
+    <string name="memories_empty">No hay recuerdos para el día de hoy</string>
+
+    <!-- Ajustes: Título Principal -->
+    <string name="settings_main_title">Ajustes de la Aplicación</string>
+    <string name="settings_main_subtitle">Selecciona una tarjeta para configurar sus opciones</string>
+
+    <!-- Ajustes: Tarjetas y Categorías -->
+    <string name="settings_cat_server">Servidor y Conexión</string>
+    <string name="settings_cat_server_desc">URL, API Key, probar conexión y cerrar sesión</string>
+    <string name="settings_cat_server_configured">URL configurada</string>
+    <string name="settings_cat_server_not_configured">Sin configurar</string>
+
+    <string name="settings_cat_language">Idioma / Language</string>
+    <string name="settings_cat_language_desc">Selecciona el idioma de la aplicación</string>
+    <string name="settings_lang_auto">Automático (Sistema)</string>
+    <string name="settings_lang_es">Español (Castellano)</string>
+    <string name="settings_lang_en">English (Inglés)</string>
+
+    <string name="settings_cat_grid">Columnas y Cuadrícula</string>
+    <string name="settings_cat_grid_desc">Número de columnas en las vistas de cuadrícula</string>
+    <string name="settings_cat_grid_subtitle">%1$d columnas</string>
+
+    <string name="settings_cat_sorting">Organización y Orden</string>
+    <string name="settings_cat_sorting_desc">Orden de álbumes, carpetas y fotos/vídeos</string>
+    <string name="settings_order_asc">Antiguas primero (Ascendente)</string>
+    <string name="settings_order_desc">Recientes primero (Descendente)</string>
+    <string name="settings_order_name">Nombre (A - Z)</string>
+    <string name="settings_order_groups">Orden de Carpetas y Álbumes</string>
+    <string name="settings_order_assets">Orden de Fotos y Vídeos</string>
+
+    <string name="settings_cat_viewer">Visor y Diapositivas</string>
+    <string name="settings_cat_viewer_desc">Intervalo, bucle, metadatos en pantalla y zoom</string>
+    <string name="settings_cat_viewer_subtitle">Intervalo %1$ds • %2$s</string>
+    <string name="settings_loop_on">Bucle ON</string>
+    <string name="settings_loop_off">Bucle OFF</string>
+    <string name="settings_opt_interval">Tiempo por diapositiva (segundos)</string>
+    <string name="settings_opt_loop_slideshow">Bucle continuo en diapositivas</string>
+    <string name="settings_opt_loop_video">Repetir vídeo en bucle al finalizar</string>
+    <string name="settings_opt_zoom">Nivel de zoom por defecto</string>
+    <string name="settings_opt_show_metadata">Mostrar barra de metadatos</string>
+    <string name="settings_opt_show_camera">Mostrar información de la cámara</string>
+    <string name="settings_opt_show_exif">Mostrar detalles técnicos EXIF</string>
+    <string name="settings_opt_show_location">Mostrar ubicación geográfica</string>
+    <string name="settings_opt_show_date">Mostrar fecha y hora</string>
+    <string name="settings_opt_show_counter">Mostrar contador de fotos (1/X)</string>
+    <string name="settings_opt_show_video_specs">Mostrar ficha técnica de vídeo (Resolución, FPS)</string>
+
+    <string name="settings_cat_video">Reproducción de Vídeo</string>
+    <string name="settings_cat_video_desc">Comportamiento al terminar un vídeo individual</string>
+    <string name="settings_video_menu_end">Menú al finalizar</string>
+
+    <string name="settings_cat_performance">Rendimiento y Efectos</string>
+    <string name="settings_cat_performance_desc">Animaciones, sombras, scroll, precarga, caché y reset</string>
+    <string name="settings_perf_fast_mode">Modo Rápido</string>
+    <string name="settings_perf_quality_mode">Modo Calidad</string>
+    <string name="settings_perf_effects_active">Efectos activos</string>
+    <string name="settings_opt_anim_focus">Animaciones de escalado al enfocar</string>
+    <string name="settings_opt_card_shadows">Sombras y elevación en tarjetas</string>
+    <string name="settings_opt_preloading">Precarga inteligente de fotos adyacentes</string>
+    <string name="settings_opt_smooth_scroll">Desplazamiento suave en cuadrículas</string>
+    <string name="settings_clear_cache">Limpiar Memoria Caché (%1$s)</string>
+    <string name="settings_reset_all">Restablecer Todos los Ajustes</string>
+
+    <!-- Ajustes: Botones de Prueba y Sesión -->
+    <string name="settings_test_connection">Probar Conexión</string>
+    <string name="settings_testing">Probando...</string>
+    <string name="settings_logout">Cerrar Sesión</string>
+
+    <!-- Actualizador GitHub -->
+    <string name="update_btn_default">Comprobar actualizaciones</string>
+    <string name="update_btn_checking">Comprobando actualizaciones...</string>
+    <string name="update_btn_install">Instalar Actualización %1$s</string>
+    <string name="update_btn_check">Comprobar actualizaciones</string>
+    <string name="update_btn_retry">Reintentar comprobación</string>
+    <string name="update_badge_available">¡NUEVA VERSIÓN: %1$s DISPONIBLE!</string>
+    <string name="update_downloading">Descargando actualización (%1$d%%)...</string>
+    <string name="update_installing">Abriendo instalador...</string>
+    <string name="update_ready">Instalación preparada</string>
+    <string name="update_up_to_date">Tienes la última versión instalada (%1$s)</string>
+    <string name="update_toast_available">¡Nueva versión %1$s disponible!</string>
+    <string name="update_toast_remote">Descargando versión remota...</string>
+    <string name="update_error">No se pudo comprobar la actualización</string>
+
+    <!-- Diálogos de Confirmación -->
+    <string name="dialog_reset_title">¿Restablecer todos los ajustes?</string>
+    <string name="dialog_reset_msg">Se restaurarán todos los valores por defecto (diapositivas a 3s, metadatos activos, orden descendente, efectos activos).</string>
+    <string name="dialog_reset_confirm">Sí, restablecer</string>
+    <string name="dialog_logout_title">¿Cerrar Sesión?</string>
+    <string name="dialog_logout_msg">Tendrás que volver a introducir la URL del servidor y la API Key para entrar.</string>
+    <string name="dialog_logout_confirm">Sí, cerrar sesión</string>
+    <string name="dialog_cancel">Cancelar</string>
+    <string name="dialog_close">Cerrar</string>
+
+    <!-- Mensajes Toast -->
+    <string name="toast_cache_cleared">Memoria caché liberada correctamente</string>
+    <string name="toast_reset_success">Ajustes restablecidos correctamente</string>
+    <string name="toast_server_ok">Conexión exitosa con el servidor Immich</string>
+    <string name="toast_server_error">Error de conexión: %1$s</string>
+    <string name="exit_double_press">Pulsa atrás de nuevo para salir</string>
+</resources>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Immich Folders for TV</string>
+
+    <!-- Side Navigation -->
+    <string name="nav_folders">Folders</string>
+    <string name="nav_albums">Albums</string>
+    <string name="nav_random">Shuffle</string>
+    <string name="nav_memories">Memories</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Login & Connection -->
+    <string name="login_title">Connect to Immich</string>
+    <string name="login_header_title">Connect to your Immich Server</string>
+    <string name="login_header_subtitle">Scan the QR code from your mobile or enter the details manually with the remote</string>
+    <string name="login_opt1_title">Option 1: Scan with Mobile</string>
+    <string name="login_opt1_desc">Open your mobile camera on the same Wi-Fi to paste the URL and API Key in 5 seconds.</string>
+    <string name="login_qr_waiting">Waiting for connection from your mobile...</string>
+    <string name="login_qr_validating">Validating received credentials...</string>
+    <string name="login_qr_success">Connection established successfully!</string>
+    <string name="login_opt2_title">Option 2: Configure with Remote</string>
+    <string name="login_server_url">Immich Server URL</string>
+    <string name="login_server_hint">http://192.168.1.81:2283</string>
+    <string name="login_api_key">Immich API Key</string>
+    <string name="login_api_key_hint">Paste your Immich API Key</string>
+    <string name="login_btn_test_connect">Test &amp; Connect</string>
+    <string name="login_btn_testing">Verifying...</string>
+    <string name="login_validation_empty">You must provide both Server URL and API Key</string>
+    <string name="login_connect">Connect</string>
+    <string name="login_connecting">Connecting...</string>
+    <string name="login_qr_title">Quick setup with QR</string>
+    <string name="login_qr_desc">Scan the QR code with your mobile to easily configure the connection</string>
+    <string name="login_error_empty">Please enter the server URL and API Key</string>
+    <string name="login_error_connection">Could not connect to the Immich server</string>
+    <string name="login_success">Connection established successfully</string>
+
+    <!-- Folders & Albums -->
+    <string name="folders_title">Folders</string>
+    <string name="folders_subtitle">Browse your photos and videos by folder structure</string>
+    <string name="albums_title">Albums</string>
+    <string name="albums_subtitle">Your organized Immich albums</string>
+    <string name="empty_folders">No folders found</string>
+    <string name="empty_albums">No albums found</string>
+    <string name="empty_media">No photos or videos in this folder</string>
+    <string name="loading_content">Loading content...</string>
+    <string name="error_loading">Error loading content</string>
+    <string name="retry">Retry</string>
+    <string name="btn_reload">Reload</string>
+    <string name="items_count">%1$d items</string>
+    <string name="items_count_detail">%1$d photos and videos</string>
+
+    <!-- Grid Action Buttons -->
+    <string name="action_slideshow">Slideshow</string>
+    <string name="action_columns">Columns</string>
+    <string name="action_calendar">Jump to date</string>
+
+    <!-- Slideshow Dialog -->
+    <string name="slideshow_dialog_title">Start Slideshow</string>
+    <string name="slideshow_type_label">Media to play</string>
+    <string name="slideshow_type_all">Photos &amp; Videos</string>
+    <string name="slideshow_type_photos">Photos Only</string>
+    <string name="slideshow_type_videos">Videos Only</string>
+    <string name="slideshow_start_label">Start from</string>
+    <string name="slideshow_start_first">From beginning</string>
+    <string name="slideshow_start_current">From selected item</string>
+    <string name="slideshow_interval_label">Time per slide</string>
+    <string name="slideshow_interval_seconds">%1$d s</string>
+    <string name="slideshow_start_btn">Start Slideshow</string>
+
+    <!-- Columns Dialog -->
+    <string name="columns_dialog_title">Grid Columns</string>
+    <string name="columns_dialog_subtitle">Number of columns in grid views</string>
+    <string name="columns_count">%1$d Columns</string>
+
+    <!-- Calendar / Jump to Date Dialog -->
+    <string name="calendar_dialog_title">Jump to Date</string>
+    <string name="calendar_dialog_subtitle">Select year, month, or day to quickly navigate</string>
+    <string name="calendar_year">Year</string>
+    <string name="calendar_month">Month</string>
+    <string name="calendar_day">Day</string>
+    <string name="calendar_jump_btn">Jump to date</string>
+    <string name="calendar_no_dates">No dates available</string>
+
+    <!-- Photo Viewer & Slideshow Toasts -->
+    <string name="viewer_zoom">Zoom</string>
+    <string name="viewer_slideshow">Slideshow</string>
+    <string name="viewer_exif">Details</string>
+    <string name="viewer_slideshow_paused">Slideshow paused</string>
+    <string name="viewer_slideshow_resumed">Slideshow resumed</string>
+    <string name="viewer_zoom_in">Zoom enabled</string>
+    <string name="viewer_zoom_out">Zoom disabled</string>
+    <string name="viewer_top_menu_title">Playback Options</string>
+    <string name="toast_slideshow_paused">Slideshow paused</string>
+    <string name="toast_slideshow_started_photos">Starting slideshow (%1$ds) (Photos only)</string>
+    <string name="toast_slideshow_started_all">Starting slideshow (%1$ds) (Photos &amp; Videos)</string>
+    <string name="toast_slideshow_ended">End of slideshow</string>
+    <string name="toast_slideshow_no_more">No more items for slideshow</string>
+    <string name="toast_first_item">First item</string>
+    <string name="toast_last_item">Last item</string>
+    <string name="loading_folder">Loading %1$s...</string>
+    <string name="slideshow_menu_title">Slideshow options</string>
+
+    <!-- EXIF & Metadata Card -->
+    <string name="exif_title">Item Details</string>
+    <string name="exif_camera">Camera</string>
+    <string name="exif_lens">Lens</string>
+    <string name="exif_params">Parameters</string>
+    <string name="exif_iso">ISO</string>
+    <string name="exif_aperture">Aperture</string>
+    <string name="exif_exposure">Exposure</string>
+    <string name="exif_focal_length">Focal Length</string>
+    <string name="exif_resolution">Resolution</string>
+    <string name="exif_dimensions">Dimensions</string>
+    <string name="exif_date">Date &amp; Time</string>
+    <string name="exif_location">Location</string>
+    <string name="exif_filename">File Name</string>
+    <string name="exif_filesize">File Size</string>
+
+    <!-- Video Player -->
+    <string name="player_speed">Speed</string>
+    <string name="player_speed_toast">Speed: %1$sx</string>
+    <string name="player_play">Play</string>
+    <string name="player_pause">Pause</string>
+    <string name="player_forward_10">+10s</string>
+    <string name="player_replay_10">-10s</string>
+    <string name="player_loop_on">Loop ON</string>
+    <string name="player_loop_off">Loop OFF</string>
+    <string name="player_ended_title">Video finished</string>
+    <string name="player_video_ended">Video finished</string>
+    <string name="player_replay">Replay</string>
+    <string name="player_next">Next</string>
+    <string name="player_prev">Previous</string>
+    <string name="player_video_specs">Video specs</string>
+
+    <!-- Login -->
+    <string name="login_subtitle">Enter your Immich server details or use the QR code</string>
+
+    <!-- Shuffle & Memories -->
+    <string name="random_title">Random Discovery</string>
+    <string name="random_subtitle">Relive random photos and videos from across your library</string>
+    <string name="random_refresh">Shuffle</string>
+    <string name="memories_title">Memories</string>
+    <string name="memories_subtitle">Photos and videos taken on this day in past years</string>
+    <string name="memories_years_ago">%1$d years ago</string>
+    <string name="memories_year_ago">1 year ago</string>
+    <string name="memories_empty">No memories found for today</string>
+
+    <!-- Settings: Main Title -->
+    <string name="settings_main_title">Application Settings</string>
+    <string name="settings_main_subtitle">Select a card to configure its preferences</string>
+
+    <!-- Settings: Cards & Categories -->
+    <string name="settings_cat_server">Server &amp; Connection</string>
+    <string name="settings_cat_server_desc">URL, API Key, test connection, and log out</string>
+    <string name="settings_cat_server_configured">URL configured</string>
+    <string name="settings_cat_server_not_configured">Not configured</string>
+
+    <string name="settings_cat_language">Language / Idioma</string>
+    <string name="settings_cat_language_desc">Select application display language</string>
+    <string name="settings_lang_auto">Automatic (System default)</string>
+    <string name="settings_lang_es">Español (Castellano)</string>
+    <string name="settings_lang_en">English (Inglés)</string>
+
+    <string name="settings_cat_grid">Columns &amp; Grid</string>
+    <string name="settings_cat_grid_desc">Number of columns across grid galleries</string>
+    <string name="settings_cat_grid_subtitle">%1$d columns</string>
+
+    <string name="settings_cat_sorting">Organization &amp; Sorting</string>
+    <string name="settings_cat_sorting_desc">Sort order for folders, albums, and media</string>
+    <string name="settings_order_asc">Oldest first (Ascending)</string>
+    <string name="settings_order_desc">Newest first (Descending)</string>
+    <string name="settings_order_name">Name (A - Z)</string>
+    <string name="settings_order_groups">Folders &amp; Albums Order</string>
+    <string name="settings_order_assets">Photos &amp; Videos Order</string>
+
+    <string name="settings_cat_viewer">Viewer &amp; Slideshow</string>
+    <string name="settings_cat_viewer_desc">Interval, loop, on-screen metadata, and zoom</string>
+    <string name="settings_cat_viewer_subtitle">Interval %1$ds • %2$s</string>
+    <string name="settings_loop_on">Loop ON</string>
+    <string name="settings_loop_off">Loop OFF</string>
+    <string name="settings_opt_interval">Time per slide (seconds)</string>
+    <string name="settings_opt_loop_slideshow">Continuous slideshow loop</string>
+    <string name="settings_opt_loop_video">Loop single video playback</string>
+    <string name="settings_opt_zoom">Default zoom level</string>
+    <string name="settings_opt_show_metadata">Show metadata overlay bar</string>
+    <string name="settings_opt_show_camera">Show camera info</string>
+    <string name="settings_opt_show_exif">Show detailed technical EXIF</string>
+    <string name="settings_opt_show_location">Show location info</string>
+    <string name="settings_opt_show_date">Show date and time</string>
+    <string name="settings_opt_show_counter">Show photo counter (1/X)</string>
+    <string name="settings_opt_show_video_specs">Show video technical specs (Resolution, FPS)</string>
+
+    <string name="settings_cat_video">Video Playback</string>
+    <string name="settings_cat_video_desc">Behavior when finishing a single video</string>
+    <string name="settings_video_menu_end">Menu on end</string>
+
+    <string name="settings_cat_performance">Performance &amp; Effects</string>
+    <string name="settings_cat_performance_desc">Animations, shadows, scroll, preloading, cache, and reset</string>
+    <string name="settings_perf_fast_mode">Fast Mode</string>
+    <string name="settings_perf_quality_mode">Quality Mode</string>
+    <string name="settings_perf_effects_active">Effects active</string>
+    <string name="settings_opt_anim_focus">Focus scale animations</string>
+    <string name="settings_opt_card_shadows">Card shadows &amp; elevation</string>
+    <string name="settings_opt_preloading">Smart adjacent photo preloading</string>
+    <string name="settings_opt_smooth_scroll">Smooth scrolling in grids</string>
+    <string name="settings_clear_cache">Clear Cache (%1$s)</string>
+    <string name="settings_reset_all">Reset All Settings</string>
+
+    <!-- Settings: Action & Session Buttons -->
+    <string name="settings_test_connection">Test Connection</string>
+    <string name="settings_testing">Testing...</string>
+    <string name="settings_logout">Log Out</string>
+
+    <!-- GitHub Updater -->
+    <string name="update_btn_default">Check for updates</string>
+    <string name="update_btn_checking">Checking for updates...</string>
+    <string name="update_btn_install">Install Update %1$s</string>
+    <string name="update_btn_check">Check for updates</string>
+    <string name="update_btn_retry">Retry check</string>
+    <string name="update_badge_available">NEW VERSION: %1$s AVAILABLE!</string>
+    <string name="update_downloading">Downloading update (%1$d%%)...</string>
+    <string name="update_installing">Opening installer...</string>
+    <string name="update_ready">Installation ready</string>
+    <string name="update_up_to_date">You have the latest version installed (%1$s)</string>
+    <string name="update_toast_available">New version %1$s available!</string>
+    <string name="update_toast_remote">Downloading remote build...</string>
+    <string name="update_error">Could not check for updates</string>
+
+    <!-- Confirmation Dialogs -->
+    <string name="dialog_reset_title">Reset all settings?</string>
+    <string name="dialog_reset_msg">All settings will be restored to default (3s slideshow, metadata on, descending order, effects active).</string>
+    <string name="dialog_reset_confirm">Yes, reset</string>
+    <string name="dialog_logout_title">Log Out?</string>
+    <string name="dialog_logout_msg">You will need to re-enter your server URL and API Key to access your media.</string>
+    <string name="dialog_logout_confirm">Yes, log out</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_close">Close</string>
+
+    <!-- Toast Notifications -->
+    <string name="toast_cache_cleared">Cache memory cleared successfully</string>
+    <string name="toast_reset_success">Settings reset to default successfully</string>
+    <string name="toast_server_ok">Connection to Immich server successful</string>
+    <string name="toast_server_error">Connection error: %1$s</string>
+    <string name="exit_double_press">Press back again to exit</string>
+</resources>
