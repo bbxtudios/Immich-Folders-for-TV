@@ -349,23 +349,32 @@ fun PhotoViewerScreen(
         }
     }
 
-    // Precarga de fotos adyacentes
+    // Precarga inteligente de fotos adyacentes (miniatura + preview) para navegación instantánea
     LaunchedEffect(currentIndex, preloading) {
         if (preloading && assets.isNotEmpty()) {
-            val nextIdx = (currentIndex + 1) % assets.size
-            val prevIdx = (currentIndex - 1 + assets.size) % assets.size
-            listOf(assets[nextIdx], assets[prevIdx]).forEach { item ->
+            val next1 = (currentIndex + 1) % assets.size
+            val next2 = (currentIndex + 2) % assets.size
+            val prev1 = (currentIndex - 1 + assets.size) % assets.size
+            listOf(assets[next1], assets[next2], assets[prev1]).forEach { item ->
                 if (!item.isVideo) {
-                    val request = ImageRequest.Builder(context)
-                        .data(item.url)
-                        .size(Size.ORIGINAL)
-                        .precision(Precision.INEXACT)
+                    val thumbReq = ImageRequest.Builder(context)
+                        .data(item.thumbnailUrl)
+                        .allowHardware(true)
                         .build()
-                    context.imageLoader.enqueue(request)
+                    context.imageLoader.enqueue(thumbReq)
+
+                    val previewReq = ImageRequest.Builder(context)
+                        .data(item.url)
+                        .size(3840, 2160)
+                        .precision(Precision.INEXACT)
+                        .allowHardware(true)
+                        .build()
+                    context.imageLoader.enqueue(previewReq)
                 }
             }
         }
     }
+
     // Precarga de la versión Fullsize en 4K Ultra HD para zoom instantáneo
     LaunchedEffect(currentAsset?.id) {
         val fullUrl = currentAsset?.fullsizeUrl
@@ -540,6 +549,26 @@ fun PhotoViewerScreen(
                 modifier = Modifier.fillMaxSize(),
                 contentAlignment = Alignment.Center
             ) {
+                // 1. Capa Base: Miniatura inmediata desde la caché de la cuadrícula (0ms pantalla negra)
+                AsyncImage(
+                    model = ImageRequest.Builder(context)
+                        .data(currentAsset.thumbnailUrl)
+                        .allowHardware(true)
+                        .crossfade(false)
+                        .build(),
+                    contentDescription = null,
+                    contentScale = ContentScale.Fit,
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .graphicsLayer {
+                            scaleX = animatedScale
+                            scaleY = animatedScale
+                            translationX = animatedPanX
+                            translationY = animatedPanY
+                        }
+                )
+
+                // 2. Capa Principal: Preview / Fullsize ultra-nítida con transición suave
                 AsyncImage(
                     model = ImageRequest.Builder(context)
                         .data(activeImageUrl)
@@ -547,8 +576,8 @@ fun PhotoViewerScreen(
                         .precision(Precision.INEXACT)
                         .allowHardware(true)
                         .allowRgb565(false)
-                        .crossfade(100)
-                        .placeholderMemoryCacheKey(currentAsset.url)
+                        .crossfade(150)
+                        .placeholderMemoryCacheKey(currentAsset.thumbnailUrl)
                         .listener(
                             onStart = { isImageLoading = true },
                             onSuccess = { _, _ -> isImageLoading = false },
