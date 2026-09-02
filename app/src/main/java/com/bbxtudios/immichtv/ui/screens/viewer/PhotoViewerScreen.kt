@@ -148,7 +148,7 @@ fun PhotoViewerScreen(
 
     val strPaused = stringResource(R.string.toast_slideshow_paused)
     val strStartedPhotos = stringResource(R.string.toast_slideshow_started_photos, slideshowIntervalSeconds)
-    val strStartedAll = stringResource(R.string.toast_slideshow_started_all)
+    val strStartedAll = stringResource(R.string.toast_slideshow_started_all, slideshowIntervalSeconds)
     val strEnded = stringResource(R.string.toast_slideshow_ended)
     val strNoMore = stringResource(R.string.toast_slideshow_no_more)
 
